@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: rgb(236, 236, 234);
+        }
+
+        .big {
+            display: flex;
+           
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding: 30px;
+            gap: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid rgb(24, 23, 24);
+            width: 30%;
+            height: 30vh;
+            padding: 10px;
+            box-shadow: 3px 5px 3px rgb(29, 28, 28);
+            background-color: rgb(236, 159, 172);
+        }
+
+        .mainBox {
+            display: flex;
+            align-items: center;
+            gap:30px;
+            justify-content:flex-start; 
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .container:hover{
+            width:31%;
+            height: 31vh;
+        }
+
+        .para{
+            margin-top: 15%;
+        }
+
+        .fa-solid{
+            color: rgba(241, 212, 45, 0.879);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="big">
+       
+        <div class="container">
+            <div class="box">
+                <div class="mainBox">
+                    <img src="https://i.pinimg.com/474x/12/d0/45/12d04587f205ba8accecb35de93f790b.jpg" width="100px" height="100px" alt="">
+                    <div>
+                    <h2>Netflix</h2>
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                </div>
+                <p class="para">Netflix is a popular streaming service offering a vast library of movies and TV shows.</p>
+            </div>    
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <div class="mainBox">
+                    <img src="https://i.pinimg.com/474x/94/01/33/940133ee9dcf00c37b94b4b03a9b9030.jpg" width="100px" height="100px" alt="">
+                    <div>
+                    <h2>Prime Video</h2>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                </div>
+                <p class="para">Amazon Prime Video offers an extensive collection of movies, series, and originals.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <div class="mainBox">
+                    <img src="https://i.pinimg.com/474x/0f/c9/01/0fc9015582b8ef167d42eb68bac253d3.jpg" width="100px" height="100px" alt="">
+                    <div>
+                    <h2>Aha</h2>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                </div>
+                <p class="para">Aha is an Indian OTT platform featuring Telugu and Tamil-language content.</p>
+            </div>
+        </div>
+
+        
+        <div class="container">
+            <div class="box">
+                <div class="mainBox">
+                    <img src="https://i.pinimg.com/474x/06/19/60/06196084992e762df628b46900195d4f.jpg" width="100px" height="100px" alt="">
+                    <div>
+                    <h2>YouTube</h2>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                </div>
+                <p class="para">YouTube is the world's largest video-sharing platform, owned by Google.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <div class="mainBox">
+                    <img src="https://i.pinimg.com/474x/e0/b7/5c/e0b75c2c044a24705e1087fd235aceb2.jpg" width="100px" height="100px" alt="">
+                    <div>
+                    <h2>ZEE5</h2>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                </div>
+                <p class="para">ZEE5 is an Indian video-on-demand service offering a variety of regional content.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <div class="mainBox">
+                    <img src="https://i.pinimg.com/474x/45/03/2f/45032f0d42941d808b77de64a1d9ff3a.jpg" width="100px" height="100px" alt="">
+                    <div>
+                    <h2>Hulu</h2>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                </div>
+                <p class="para">Hulu is an American streaming platform with a mix of live TV and on-demand content.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
